@@ -13,8 +13,9 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
+  padding: 1rem;
 }
 
 router-outlet + *  {
@@ -109,7 +110,7 @@ label {
 app-top-bar {
   width: 100%;
   height: 68px;
-  background-color: #1976d2;
+  background-color: #434547;
   padding: 16px;
   display: flex;
   flex-direction: row;
