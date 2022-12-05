@@ -1,8 +1,23 @@
+input {
+  outline: none;
+  border: none;
+  margin: 0;
+}
+
+.search-container {
+  border-bottom: 1px solid #666;
+}
+
+.fa-magnifying-glass {
+  color: blue;
+}
+
 .top-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border: 1px solid #666;
+  padding: 8px 16px;
 }
 
 .toggle-container {
