@@ -2,10 +2,11 @@ input {
   outline: none;
   border: none;
   margin: 0;
+  font-size: 20px;
 }
 
 .search-container {
-  border-bottom: 1px solid #dedfe0;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .fa-magnifying-glass {
@@ -38,6 +39,7 @@ input {
   border: 1px solid #dedfe0;
   border-radius: 8px;
   padding: 8px 16px;
+  box-shadow: 0 0 2px 2px #f4f4f4;
 }
 
 .toggle-container {
@@ -47,7 +49,9 @@ input {
 
 .calender-container {
   margin-top: 16px;
-  border: 1px solid #666;
+  border: 1px solid #dedfe0;
+  border-radius: 8px;
+  box-shadow: 0 0 2px 2px #f4f4f4;
 }
 
 .title-container {
@@ -55,6 +59,22 @@ input {
   grid-template-columns: 2fr 5fr 3fr;
   text-align: center;
   line-height: 30px;
+}
+
+.table-head {
+  padding: 8px;
+  font-weight: bold;
+  border-bottom: 1px solid #eaeaea;
+  box-shadow: 0 1px #f4f4f4;
+}
+
+.calendar-head {
+  padding: 8px;
+  background-color: #f3f4f6;
+}
+
+.calendar-head div {
+  color: #74b3fb;
 }
 
 .content-container {
