@@ -5,28 +5,38 @@ input {
 }
 
 .search-container {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #dedfe0;
 }
 
 .fa-magnifying-glass {
-  color: blue;
+  color: #539fff;
 }
 
 .tabs {
-  border: 1px solid #666;
-  border-radius: 4px;
-  background-color: lightgray;
+  border: 1px solid #e9e9e9;
+  border-radius: 8px;
+  background-color: #f6f6f6;
 }
 
-.tabs div {
+.tabs .tab {
+  padding: 8px 16px;
+  width: 120px;
   display: inline-block;
+}
+
+.tab-selected {
+  background-color: #dfeffc;
+  color: #017aff;
+  border: 1px solid #93c3fd;
+  border-radius: 8px;
 }
 
 .top-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #666;
+  border: 1px solid #dedfe0;
+  border-radius: 8px;
   padding: 8px 16px;
 }
 
