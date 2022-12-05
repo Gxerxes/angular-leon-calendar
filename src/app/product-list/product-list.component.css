@@ -43,13 +43,13 @@
   text-align: center;
 }
 
-.target-container {
+.common-container {
   display: grid;
   grid-auto-columns: minmax(45px, 1fr);
   grid-auto-flow: column;
 }
 
-.target-container div {
+.common-container div {
   text-align: center;
 }
 
