@@ -10,7 +10,7 @@ input {
 }
 
 .fa-magnifying-glass {
-  color: #539fff;
+  color: #087dff;
 }
 
 .tabs {
@@ -74,25 +74,60 @@ input {
 }
 
 .calendar-head div {
-  color: #74b3fb;
+  color: #087dff;
 }
 
 .content-container {
   display: grid;
   grid-template-columns: 2fr 5fr 3fr;
-  height: 150px;
+  height: 200px;
+  padding: 0 8px;
+}
+
+.grid {
+  border-right: 1px solid #e8e8e8;
+  box-shadow: 1px 0 #f4f4f4;
+}
+
+.ace {
+  display: inline-block;
+  margin-top: 100px;
+  color: #fcfcfc;
+  background-color: #d3d3d3;
+}
+
+.dr {
+  color: #087dff;
+}
+
+.hospital {
+  color: #d3d3d3;
 }
 
 .week-container {
   display: grid;
   grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column;
+  justify-content: space-between;
+}
+
+.week-title {
+  line-height: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.week-icon-1 {
+  margin-top: 60px;
 }
 
 .icon-container {
   display: grid;
   grid-auto-columns: minmax(45px, 1fr);
   grid-auto-flow: column;
+  align-items: center;
+  height: 60px;
 }
 
 .icon-container div {
