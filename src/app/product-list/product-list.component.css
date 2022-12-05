@@ -39,10 +39,18 @@
   grid-auto-flow: column;
 }
 
+.icon-container div {
+  text-align: center;
+}
+
 .target-container {
   display: grid;
   grid-auto-columns: minmax(45px, 1fr);
   grid-auto-flow: column;
+}
+
+.target-container div {
+  text-align: center;
 }
 
 .switch {
