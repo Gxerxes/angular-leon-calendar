@@ -24,7 +24,7 @@
 .content-container {
   display: grid;
   grid-template-columns: 2fr 5fr 3fr;
-  height: 200px;
+  height: 150px;
 }
 
 .week-container {
