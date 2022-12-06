@@ -84,6 +84,15 @@ input {
   left: 500px;
 }
 
+.cursor-block {
+  position: absolute;
+  top: 43px;
+  width: 10px;
+  height: 10px;
+  background-color: #007aff;
+  left: 496px;
+}
+
 .title-container {
   display: grid;
   grid-template-columns: 2fr 5fr 3fr;
