@@ -74,15 +74,19 @@ input {
   line-height: 30px;
 }
 
+.title-container div {
+  padding: 8px 0;
+}
+
 .table-head {
-  padding: 8px;
+  padding: 0 8px;
   font-weight: bold;
   border-bottom: 1px solid #eaeaea;
   box-shadow: 0 1px #f4f4f4;
 }
 
 .calendar-head {
-  padding: 8px;
+  padding: 0 8px;
   background-color: #f3f4f6;
 }
 
