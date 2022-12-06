@@ -8,16 +8,30 @@
     <div class="toggle-container">
       <span>MY</span>
       <label class="switch">
-        <input type="checkbox" />
-        <span class="slider round"></span>
+        <input
+          type="checkbox"
+          (change)="myAllChange($event)"
+          [checked]="true"
+        />
+        <span
+          class="slider round"
+          [ngClass]="myAll ? 'toggled-label' : 'untoggled-label'"
+        ></span>
       </label>
-      <span class="toggled-label">ALL</span>
+      <span [ngClass]="myAll ? 'toggled-label' : 'untoggled-label'">ALL</span>
     </div>
     <div class="toggle-container">
       <span class="untoggled-label">Month</span>
       <label class="switch">
-        <input type="checkbox" />
-        <span class="slider round"></span>
+        <input
+          type="checkbox"
+          [value]="monthWeek"
+          (change)="monthWeekChange($event)"
+        />
+        <span
+          class="slider round"
+          [ngClass]="monthWeek ? 'toggled-label' : 'untoggled-label'"
+        ></span>
       </label>
       <span>Week</span>
     </div>
@@ -33,9 +47,20 @@
       <div>ACE Recommended Frequency</div>
     </div>
     <div class="title-container calendar-head">
-      <div>ACE Prioritation</div>
-      <div>June 2021</div>
-      <div>June 2021</div>
+      <div>
+        <span style="margin-right: 8px;">ACE Prioritation</span>
+        <i class="fa-solid fa-chevron-down calender-arrow"></i>
+      </div>
+      <div>
+        <i class="fa-solid fa-chevron-left calender-arrow"></i>
+        <span class="month-year">June 2021</span>
+        <i class="fa-solid fa-chevron-right calender-arrow"></i>
+      </div>
+      <div>
+        <i class="fa-solid fa-chevron-left calender-arrow"></i>
+        <span class="month-year">June 2021</span>
+        <i class="fa-solid fa-chevron-right calender-arrow"></i>
+      </div>
     </div>
     <div class="content-container">
       <div class="grid name-container">

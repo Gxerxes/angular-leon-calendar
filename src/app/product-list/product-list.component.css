@@ -86,8 +86,13 @@ input {
   background-color: #f3f4f6;
 }
 
-.calendar-head div {
+.calendar-head div span,
+.calender-arrow {
   color: #087dff;
+}
+
+.month-year {
+  margin: 0 16px;
 }
 
 .content-container {
@@ -181,6 +186,7 @@ input {
   display: inline-block;
   width: 45px;
   height: 22px;
+  margin: 0 2px;
 }
 
 .fa-circle {
@@ -216,13 +222,18 @@ input {
   content: '';
   height: 18px;
   width: 18px;
-  left: 1px;
+  left: 0px;
   bottom: 1px;
   background-color: #e6d9ff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 1px solid #b492f5;
   box-shadow: 0 0 1px 1px #b492f5;
+}
+.slider.untoggled-label:before {
+  background-color: #dfeffc;
+  border: 1px solid #097dff;
+  box-shadow: 0 0 1px 1px #097dff;
 }
 
 input:checked + .slider {

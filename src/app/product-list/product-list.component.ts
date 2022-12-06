@@ -1,20 +1,31 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { products } from '../products';
 
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  styleUrls: ['./product-list.component.css'],
 })
-export class ProductListComponent {
+export class ProductListComponent implements OnInit {
   products = products;
+  public myAll = true;
+  public monthWeek = false;
 
   share() {
     window.alert('The product has been shared!');
   }
-}
 
+  myAllChange(e: any): void {
+    this.myAll = e.currentTarget.checked;
+  }
+
+  monthWeekChange(e: any): void {
+    this.monthWeek = e.currentTarget.checked;
+  }
+
+  ngOnInit() {}
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.
