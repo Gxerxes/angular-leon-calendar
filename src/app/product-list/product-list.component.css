@@ -71,6 +71,19 @@ input {
   box-shadow: 0 0 2px 2px #f4f4f4;
 }
 
+.table-container {
+  position: relative;
+}
+
+.cursor {
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  width: 2px;
+  background-color: #007aff;
+  left: 500px;
+}
+
 .title-container {
   display: grid;
   grid-template-columns: 2fr 5fr 3fr;

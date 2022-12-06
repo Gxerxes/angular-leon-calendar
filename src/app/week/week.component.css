@@ -36,7 +36,7 @@
   display: grid;
   grid-template-columns: 2fr 5fr 3fr;
   height: 141px;
-  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
   box-shadow: 0 1px #f4f4f4;
 }
 
@@ -81,9 +81,9 @@
   vertical-align: middle;
 }
 
-/* .week-icon-1 {
-  margin-top: 60px;
-} */
+.week-icon-1 .green-icon {
+  color: #56e1aa;
+}
 
 .week-icon-2 span .fa-circle {
   color: #b18df5;

@@ -18,9 +18,7 @@
       <span class="label mylabel" [ngClass]="{ toggled: myAll }">ALL</span>
     </div>
     <div class="toggle-container week-toggle">
-      <span
-        class="label weekLabel"
-        [ngClass]="{'toggled': !monthWeek}"
+      <span class="label weekLabel" [ngClass]="{ toggled: !monthWeek }"
         >Month</span
       >
       <label class="switch">
@@ -29,11 +27,11 @@
           [value]="monthWeek"
           (change)="monthWeekChange($event)"
         />
-        <span
-          class="slider round"
-        ></span>
+        <span class="slider round"></span>
       </label>
-      <span class="label weeklabel" [ngClass]="{'toggled': monthWeek}">Week</span>
+      <span class="label weeklabel" [ngClass]="{ toggled: monthWeek }"
+        >Week</span
+      >
     </div>
     <div class="search-container">
       <i class="fa-solid fa-magnifying-glass fa-2x"></i>
@@ -62,184 +60,187 @@
         <i class="fa-solid fa-chevron-right calender-arrow"></i>
       </div>
     </div>
-    <div class="content-container">
-      <div class="grid name-container">
-        <!-- <div class="ace">ACE 1</div>
-        <div class="dr">Dr Jack Smith</div>
-        <div class="hospital">Hospital name</div> -->
-      </div>
-      <div class="grid week-container">
-        <div>
-          <div class="week-title">Week 1</div>
-          <!-- <div class="week-column">
-            <div class="week-icon week-icon-1">
-              <span class="fa-stack small">
+    <div class="table-container">
+      <div class="content-container">
+        <div class="grid name-container">
+          <!-- <div class="ace">ACE 1</div>
+          <div class="dr">Dr Jack Smith</div>
+          <div class="hospital">Hospital name</div> -->
+        </div>
+        <div class="grid week-container">
+          <div>
+            <div class="week-title">Week 1</div>
+            <!-- <div class="week-column">
+              <div class="week-icon week-icon-1">
+                <span class="fa-stack small">
+                  <i class="fa-solid fa-circle fa-stack-2x"></i>
+                  <i class="fa-solid fa-flag fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="fa-stack small">
+                  <i class="fa-solid fa-circle fa-stack-2x"></i>
+                  <i class="fa-solid fa-address-book fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+              <div class="week-icon week-icon-2">
+                <span class="fa-stack small">
+                  <i class="fa-solid fa-circle fa-stack-2x"></i>
+                  <i class="fa-solid fa-computer fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </div> -->
+          </div>
+          <div>
+            <div class="week-title">Week 2</div>
+            <!-- <div class="week-column">
+              <div class="week-icon-1"></div>
+              <div class="week-icon-2"></div>
+            </div> -->
+          </div>
+          <div>
+            <div class="week-title">Week 3</div>
+            <!-- <div class="week-column">
+              <div class="week-icon-1"></div>
+              <div class="week-icon-2"></div>
+            </div> -->
+          </div>
+          <div>
+            <div class="week-title">Week 4</div>
+            <!-- <div class="week-column">
+              <div class="week-icon-1"></div>
+              <div class="week-icon-2"></div>
+            </div> -->
+          </div>
+          <div>
+            <div class="week-title">Week 5</div>
+            <!-- <div class="week-column">
+              <div class="week-icon-1"></div>
+              <div class="week-icon-2"></div>
+            </div> -->
+          </div>
+        </div>
+        <div class="events-container">
+          <div class="icon-container">
+            <div>
+              <span class="fa-stack">
+                <i class="fa-solid fa-circle fa-stack-2x hidden-icon"></i>
+                <i class="fa-solid fa-flag fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <div>
+              <span class="fa-stack">
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
                 <i class="fa-solid fa-flag fa-stack-1x fa-inverse"></i>
               </span>
-              <span class="fa-stack small">
+            </div>
+            <div>
+              <span class="fa-stack">
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
                 <i class="fa-solid fa-address-book fa-stack-1x fa-inverse"></i>
               </span>
             </div>
-            <div class="week-icon week-icon-2">
-              <span class="fa-stack small">
+            <div>
+              <span class="fa-stack">
                 <i class="fa-solid fa-circle fa-stack-2x"></i>
                 <i class="fa-solid fa-computer fa-stack-1x fa-inverse"></i>
               </span>
             </div>
-          </div> -->
-        </div>
-        <div>
-          <div class="week-title">Week 2</div>
-          <!-- <div class="week-column">
-            <div class="week-icon-1"></div>
-            <div class="week-icon-2"></div>
-          </div> -->
-        </div>
-        <div>
-          <div class="week-title">Week 3</div>
-          <!-- <div class="week-column">
-            <div class="week-icon-1"></div>
-            <div class="week-icon-2"></div>
-          </div> -->
-        </div>
-        <div>
-          <div class="week-title">Week 4</div>
-          <!-- <div class="week-column">
-            <div class="week-icon-1"></div>
-            <div class="week-icon-2"></div>
-          </div> -->
-        </div>
-        <div>
-          <div class="week-title">Week 5</div>
-          <!-- <div class="week-column">
-            <div class="week-icon-1"></div>
-            <div class="week-icon-2"></div>
+            <div>
+              <span class="fa-stack">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-phone fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <div>
+              <span class="fa-stack">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <div>
+              <span class="fa-stack">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-inbox fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+          </div>
+          <!-- <div class="events-content-container">
+            <div class="common-container target-container">
+              <div>Target</div>
+              <div>6</div>
+              <div>3</div>
+              <div>6</div>
+              <div>4</div>
+              <div>1</div>
+              <div>0</div>
+            </div>
+            <div class="common-container todo-container">
+              <div style="padding-top: 8px">ToDo</div>
+              <div>
+                <span class="fa-stack">
+                  <i class="fa-solid fa-circle fa-stack-2x"></i>
+                  <i class="fa-solid fa-2 fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+              <div>
+                <span class="fa-stack">
+                  <i class="fa-solid fa-circle fa-stack-2x"></i>
+                  <i class="fa-solid fa-2 fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+              <div>
+                <span class="fa-stack">
+                  <i class="fa-solid fa-circle fa-stack-2x"></i>
+                  <i class="fa-solid fa-1 fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+              <div>
+                <span class="fa-stack">
+                  <i class="fa-solid fa-circle fa-stack-2x"></i>
+                  <i class="fa-solid fa-1 fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+              <div>
+                <span class="fa-stack">
+                  <i class="fa-solid fa-circle fa-stack-2x"></i>
+                  <i class="fa-solid fa-1 fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+              <div>
+                <span class="fa-stack">
+                  <i class="fa-solid fa-circle fa-stack-2x"></i>
+                  <i class="fa-solid fa-0 fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </div>
+            <div class="common-container calc-container">
+              <div>
+                <i class="fa-solid fa-calendar-days" s></i>
+              </div>
+              <div>6</div>
+              <div>3</div>
+              <div>6</div>
+              <div>4</div>
+              <div>1</div>
+              <div>0</div>
+            </div>
+            <div class="common-container check-container">
+              <div>
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>6</div>
+              <div>3</div>
+              <div>6</div>
+              <div>4</div>
+              <div>1</div>
+              <div>0</div>
+            </div>
           </div> -->
         </div>
       </div>
-      <div class="events-container">
-        <div class="icon-container">
-          <div>
-            <span class="fa-stack">
-              <i class="fa-solid fa-circle fa-stack-2x hidden-icon"></i>
-              <i class="fa-solid fa-flag fa-stack-1x fa-inverse"></i>
-            </span>
-          </div>
-          <div>
-            <span class="fa-stack">
-              <i class="fa-solid fa-circle fa-stack-2x"></i>
-              <i class="fa-solid fa-flag fa-stack-1x fa-inverse"></i>
-            </span>
-          </div>
-          <div>
-            <span class="fa-stack">
-              <i class="fa-solid fa-circle fa-stack-2x"></i>
-              <i class="fa-solid fa-address-book fa-stack-1x fa-inverse"></i>
-            </span>
-          </div>
-          <div>
-            <span class="fa-stack">
-              <i class="fa-solid fa-circle fa-stack-2x"></i>
-              <i class="fa-solid fa-computer fa-stack-1x fa-inverse"></i>
-            </span>
-          </div>
-          <div>
-            <span class="fa-stack">
-              <i class="fa-solid fa-circle fa-stack-2x"></i>
-              <i class="fa-solid fa-phone fa-stack-1x fa-inverse"></i>
-            </span>
-          </div>
-          <div>
-            <span class="fa-stack">
-              <i class="fa-solid fa-circle fa-stack-2x"></i>
-              <i class="fa-solid fa-envelope fa-stack-1x fa-inverse"></i>
-            </span>
-          </div>
-          <div>
-            <span class="fa-stack">
-              <i class="fa-solid fa-circle fa-stack-2x"></i>
-              <i class="fa-solid fa-inbox fa-stack-1x fa-inverse"></i>
-            </span>
-          </div>
-        </div>
-        <!-- <div class="events-content-container">
-          <div class="common-container target-container">
-            <div>Target</div>
-            <div>6</div>
-            <div>3</div>
-            <div>6</div>
-            <div>4</div>
-            <div>1</div>
-            <div>0</div>
-          </div>
-          <div class="common-container todo-container">
-            <div style="padding-top: 8px">ToDo</div>
-            <div>
-              <span class="fa-stack">
-                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-solid fa-2 fa-stack-1x fa-inverse"></i>
-              </span>
-            </div>
-            <div>
-              <span class="fa-stack">
-                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-solid fa-2 fa-stack-1x fa-inverse"></i>
-              </span>
-            </div>
-            <div>
-              <span class="fa-stack">
-                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-solid fa-1 fa-stack-1x fa-inverse"></i>
-              </span>
-            </div>
-            <div>
-              <span class="fa-stack">
-                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-solid fa-1 fa-stack-1x fa-inverse"></i>
-              </span>
-            </div>
-            <div>
-              <span class="fa-stack">
-                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-solid fa-1 fa-stack-1x fa-inverse"></i>
-              </span>
-            </div>
-            <div>
-              <span class="fa-stack">
-                <i class="fa-solid fa-circle fa-stack-2x"></i>
-                <i class="fa-solid fa-0 fa-stack-1x fa-inverse"></i>
-              </span>
-            </div>
-          </div>
-          <div class="common-container calc-container">
-            <div>
-              <i class="fa-solid fa-calendar-days" s></i>
-            </div>
-            <div>6</div>
-            <div>3</div>
-            <div>6</div>
-            <div>4</div>
-            <div>1</div>
-            <div>0</div>
-          </div>
-          <div class="common-container check-container">
-            <div>
-              <i class="fa-solid fa-check"></i>
-            </div>
-            <div>6</div>
-            <div>3</div>
-            <div>6</div>
-            <div>4</div>
-            <div>1</div>
-            <div>0</div>
-          </div>
-        </div> -->
-      </div>
+      <app-week [drName]="'Dr Jack Smith'"></app-week>
+      <app-week [drName]="'Dr Jon Maeda'"></app-week>
+      <app-week [drName]="'Dr Kate Green'"></app-week>
+      <div class="cursor"></div>
     </div>
-    <app-week [drName]="'Dr Jack Smith'"></app-week>
-    <app-week [drName]="'Dr Jon Maeda'"></app-week>
-    <app-week [drName]="'Dr Kate Green'"></app-week>
   </div>
 </div>
