@@ -5,6 +5,10 @@
   box-shadow: 0 0 2px 2px #f4f4f4;
 }
 
+.name-container {
+  padding-left: 16px;
+}
+
 .title-container {
   display: grid;
   grid-template-columns: 2fr 5fr 3fr;
@@ -32,7 +36,6 @@
   display: grid;
   grid-template-columns: 2fr 5fr 3fr;
   height: 141px;
-  padding: 0 8px;
   border-top: 1px solid #e8e8e8;
   box-shadow: 0 1px #f4f4f4;
 }
@@ -47,6 +50,9 @@
   margin-top: 56px;
   color: #fcfcfc;
   background-color: #d3d3d3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 12px;
 }
 
 .dr {
@@ -79,6 +85,10 @@
   margin-top: 60px;
 } */
 
+.week-icon-2 span .fa-circle {
+  color: #b18df5;
+}
+
 .week-column {
   height: 100%;
   border-right: 1px solid #f7f7f9;
@@ -107,6 +117,10 @@
   text-align: center;
 }
 
+.events-container {
+  background-color: #f8fffd;
+}
+
 .events-content-container {
   display: grid;
   height: 100%;
@@ -116,11 +130,17 @@
   justify-content: center;
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 45px;
-  height: 22px;
+.calc-container * {
+  color: #56e1aa;
+  font-weight: bold;
+}
+
+.todo-container * {
+  color: #4e9efe;
+}
+
+.todo-container .fa-circle {
+  color: #cbe5fd;
 }
 
 .fa-circle {
