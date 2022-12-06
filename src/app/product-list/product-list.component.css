@@ -87,10 +87,12 @@ input {
 .cursor-block {
   position: absolute;
   top: 43px;
-  width: 10px;
-  height: 10px;
-  background-color: #007aff;
-  left: 496px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #007aff;
+  left: 491px;
 }
 
 .title-container {
